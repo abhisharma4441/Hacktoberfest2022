@@ -9,11 +9,8 @@ public:
     
     int help(vector<vector<int>>& grid, int x, int y, int z, int k){
         
-        //Reached destination
-        if(x == 0 && y  == 0)return 0;
-        
-        //Already visited/calculated
-        if(dp[x][y][z]) return dp[x][y][z];
+ 
+		
         
         //Cant remove any more obstacles
         if(grid[x][y] == 1 && z == 0)return MAX;
